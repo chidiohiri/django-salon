@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row align-items-md-stretch">
+    <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+            <h2>Add Inventory Item</h2>
+            <p>
+                Quickly add new products or supplies to your inventory. Keep your stock levels accurate by entering
+                essential item details like name, quantity, and restock threshold.
+            </p>
+            <a href="#" class="btn btn-outline-light" type="button">Add Item</a>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>Manage Items</h2>
+            <p>
+                View, edit, or remove items from your inventory. Stay in control of stock levels, update item details,
+                and ensure your records reflect real-time changes.
+
+            </p>
+            <a href="#" class="btn btn-outline-secondary" type="button">Manage Items</a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

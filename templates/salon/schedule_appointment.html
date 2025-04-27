@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+
+<div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center ">
+        <h6 class="mb-0">Schedule an Appointment</h6>
+
+    </div>
+    <div class="card-body">
+        <div class="card">
+            <div class="card-body">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Select Date</label>
+                                {% render_field form.appointment class="form-control" type="date" %}
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Select Services</label>
+                                {% render_field form.service class="form-control" id="services" %}
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Comment</label>
+                                {% render_field form.comment class="form-control" %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const element = document.getElementById('services');
+        const choices = new Choices(element, {
+            removeItemButton: true,
+            searchPlaceholderValue: 'Search services...',
+        });
+    });
+</script>
+
+
+{% endblock content %}
