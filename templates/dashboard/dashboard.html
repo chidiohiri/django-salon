@@ -5,23 +5,23 @@
 <div class="row align-items-md-stretch">
     <div class="col-md-6">
         <div class="h-100 p-5 text-white bg-dark rounded-3">
-            <h2>Add Inventory Item</h2>
+            <h2>Schedule Appointment</h2>
             <p>
-                Quickly add new products or supplies to your inventory. Keep your stock levels accurate by entering
-                essential item details like name, quantity, and restock threshold.
+                Easily book your appointments at the salon. Simply select your preferred time, service, ensuring a
+                smooth and hassle-free scheduling experience.
             </p>
-            <a href="#" class="btn btn-outline-light" type="button">Add Item</a>
+            <a href="{% url 'schedule-appointment' %}" class="btn btn-outline-light" type="button">Schedule</a>
         </div>
     </div>
     <div class="col-md-6">
         <div class="h-100 p-5 bg-light border rounded-3">
-            <h2>Manage Items</h2>
+            <h2>History</h2>
             <p>
-                View, edit, or remove items from your inventory. Stay in control of stock levels, update item details,
-                and ensure your records reflect real-time changes.
+                View, edit, or cancel your past salon appointments. Keep track of your appointment history, update
+                service details, and ensure your records reflect any changes to your booking.
 
             </p>
-            <a href="#" class="btn btn-outline-secondary" type="button">Manage Items</a>
+            <a href="{% url 'my-appointments' %}" class="btn btn-outline-secondary" type="button">View History</a>
         </div>
     </div>
 </div>
