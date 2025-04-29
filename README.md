@@ -1,4 +1,4 @@
-# Django Job
+# Django Salon
 
 The Django Salon Appointment Management System is a web-based application designed to streamline how customers book, manage, and pay for salon services without using physical cash. The platform ensures a seamless user experience, allowing customers to schedule appointments, select services, make payments through a digital wallet, and provide feedback — all from the convenience of their devices.
 
