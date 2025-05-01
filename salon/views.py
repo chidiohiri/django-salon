@@ -60,7 +60,7 @@ def update_appointment(request, pk):
     today = timezone.now().date()
 
     if appointment.appointment <= today:
-        messages.warning(request, 'You cannot delete this appointment on the scheduled date')
+        messages.warning(request, 'You cannot update this appointment on the scheduled date')
         return redirect('my-appointments')
 
     if request.method == 'POST':
